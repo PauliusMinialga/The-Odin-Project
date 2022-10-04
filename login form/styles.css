@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    width: 40%;
+    height: 96%;
+    margin: 1% 0% 1% 1%;
+    background: url(./photo.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.right {
+    overflow: auto;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.right>* {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+
+.form-label {
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.1rem);
+}
+
+.form-input {
+    border: 2px solid gray;
+    border-radius: 0.2rem;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    width: 15rem;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 10%;
+}
+
+.form-input:focus {
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+
+.form-input:placeholder-shown+.form-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+form {
+    padding-top: 3%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.034);
+}
+
+.form {
+    margin-top: 3%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.inputs> :last-child {
+    padding-left: 10%;
+}
+
+.form-end {
+    margin-top: 20px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 15px;
+    margin-bottom: 0.2rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    background: #009900;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+        inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+        0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #dfdedf;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(139, 139, 139);
+    border-right: 2px solid rgb(139, 139, 139);
+}
+
+.btn:hover {
+    outline: 0;
+    box-shadow: inset 0px 0.8px 1px -0.25px rgba(255, 255, 255, 0.2),
+        0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(172, 191, 27, 0.5);
+}
+
+.login {
+    color: #009900;
+    text-decoration: none;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error-message {
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+}
+
+@media (max-width: 1000px) {
+    .right {
+        margin-top: 2%;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs> :last-child {
+        padding-left: 0%;
+    }
+}

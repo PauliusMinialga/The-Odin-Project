@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="" alt="" />
+        </div>
+
+        <div class="right">
+            <div class="form-info">
+                <h4>This is not a real online service!
+                    You know you need something like this
+                    in your life to help you realize your deepest
+                    dreams. Sign up <em>now</em> to get started.</h4>
+                <br>
+                <h4>You <em>know</em> you want to</h4>
+            </div>
+            <form action="" class="form">
+                <div class="user-details">
+                    <h1>Let's do this!</h1>
+                    <br>
+                    <div class="inputs">
+                        <div class="first-name">
+                            <input type="text" id="first" name="firstName" class="form-input" placeholder="First Name"
+                                required />
+
+                            <label for="first" class="form-label">FIRST NAME:</label>
+                        </div>
+                        <div class="last-name">
+                            <input type="text" id="last" name="lastName" class="form-input" placeholder="Last Name"
+                                required />
+
+                            <label for="last" class="form-label">LAST NAME:</label>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="email">
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Email"
+                                required />
+
+                            <label for="email" class="form-label">EMAIL:</label>
+                        </div>
+                        <div class="phone-number">
+                            <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone Number"
+                                required />
+
+                            <label for="phone" class="form-label">PHONE NUMBER:</label>
+
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="pswd">
+                            <input type="password" id="password" name="password" class="form-input"
+                                placeholder="Password" required />
+
+                            <label for="password" class="form-label">PASSWORD:</label>
+                        </div>
+                        <div class="confirm-password">
+                            <input type="password" id="confirmPassword" name="passwordConfirm" class="form-input"
+                                placeholder="Confirm Password" required />
+
+                            <label for="confirmPassword" class="form-label">CONFIRM PASSWORD:</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-end">
+                    <div class="error-message"></div>
+                    <button type="submit" class="btn">Create Account</button>
+                    <h4>Already have an account? <a href="" class="login">Log in</a></h4>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
